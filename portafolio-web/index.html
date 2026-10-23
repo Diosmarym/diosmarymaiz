@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diosmary Maiz Maestre · Business Operations & Project Manager">
+<meta property="og:description" content="Operaciones comerciales, cuentas Tier-1 y proyectos digitales en EE. UU. y LATAM.">
+<meta name="theme-color" content="#14232A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23E5645E'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='white'%3EDM%3C/text%3E%3C/svg%3E">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Diosmary Maiz Maestre</title>
+<meta name="description" content="Business Operations & Project Manager. Operaciones comerciales, cuentas clave y proyectos digitales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: carpeta de archivo retro sobre fondo menta. Pestañas tipo folder, fichas, bandas de color plano y un mapa de alcance. */
+:root {
+  --bg: #14232A;
+  --paper: #1C2F37;
+  --ink: #F3EDE2;
+  --ink-soft: #A9BCC0;
+  --coral: #F07A72;
+  --orange: #F3B067;
+  --teal: #55C9B6;
+  --teal-ink: #6FD8C6;
+  --coral-ink: #FF928A;
+  --line: #2B4049;
+  --tab: #23383F;
+  --land: #2E4650;
+  --shadow: 0 1px 0 #2B4049, 0 16px 36px -20px rgba(0,0,0,.75);
+  color-scheme: dark;
+
+  --f-display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --f-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --s-xs: .8125rem; --s-sm: .9375rem; --s-md: 1.0625rem; --s-lg: 1.375rem; --s-xl: clamp(1.7rem, 4vw, 2.1rem); --s-2xl: clamp(2.5rem, 7vw, 4.4rem);
+  --r: 14px;
+  --maxw: 1140px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font: 400 var(--s-md)/1.6 var(--f-body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: 20px; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h2 { font-size: var(--s-xl); font-weight: 800; }
+h3 { font-size: var(--s-lg); font-weight: 700; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; border-radius: 6px; }
+.eyebrow { font: 500 var(--s-xs)/1.2 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--coral-ink); }
+.muted { color: var(--ink-soft); }
+section { padding-block: 72px; }
+@media (max-width: 600px) { section { padding-block: 52px; } }
+.sec-head { display: grid; gap: 10px; margin-bottom: 32px; max-width: 64ch; }
+
+/* ---------- motion ---------- */
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { opacity: 0; transform: scale(.94) rotate(-2deg); } to { opacity: 1; transform: none; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes pulse { 0% { r: 5; opacity: .7; } 100% { r: 20; opacity: 0; } }
+@keyframes float { 50% { transform: translateY(-8px); } }
+.hero-copy > * { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+.hero-copy > *:nth-child(2) { animation-delay: .08s; } .hero-copy > *:nth-child(3) { animation-delay: .16s; }
+.hero-copy > *:nth-child(4) { animation-delay: .24s; } .hero-copy > *:nth-child(5) { animation-delay: .32s; } .hero-copy > *:nth-child(6) { animation-delay: .4s; }
+.portrait { animation: pop .8s .1s cubic-bezier(.2,.7,.2,1) both; }
+@supports (animation-timeline: view()) {
+  .reveal { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- nav ---------- */
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; }
+.mono { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--coral); color: #FFFFFF; font: 800 1rem var(--f-display); text-decoration: none; flex: none; }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: var(--s-sm); font-weight: 500; }
+.nav ul a { text-decoration: none; }
+.nav ul a:hover { color: var(--coral-ink); }
+.nav-tools { display: flex; gap: 8px; }
+.pill { border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 999px; height: 36px; padding: 0 12px; font: 500 var(--s-xs) var(--f-mono); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.lang b { font-weight: 500; opacity: .45; }
+.lang b.on { opacity: 1; color: var(--coral-ink); }
+@media (max-width: 820px) { .nav ul { display: none; } }
+
+/* ---------- hero ---------- */
+.hero { padding-block: 52px 64px; }
+.hero .wrap { display: grid; grid-template-columns: 1.25fr .9fr; gap: 48px; align-items: center; }
+.hero-copy { display: grid; gap: 20px; min-width: 0; }
+.hero h1 { font-size: var(--s-2xl); font-weight: 800; }
+.hero h1 span { color: var(--coral); }
+.role { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font: 500 var(--s-sm) var(--f-mono); }
+.role b { background: var(--ink); color: var(--bg); padding: 6px 12px; border-radius: 6px; font-weight: 500; }
+.lede { font-size: 1.2rem; max-width: 52ch; color: var(--ink-soft); }
+.lede strong { color: var(--ink); font-weight: 600; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 20px; border-radius: 999px; font: 600 var(--s-sm) var(--f-body); text-decoration: none; cursor: pointer; border: 2px solid var(--ink); background: transparent; color: var(--ink); transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn.primary { background: var(--ink); color: var(--bg); }
+.email-line { font: 400 var(--s-xs) var(--f-mono); color: var(--ink-soft); user-select: all; }
+.portrait { position: relative; justify-self: center; width: min(100%, 390px); }
+.portrait .sun { position: absolute; top: -6%; right: -10%; width: 64%; aspect-ratio: 1; border-radius: 50%; background: repeating-conic-gradient(var(--coral) 0 9deg, transparent 9deg 18deg); opacity: .5; animation: spin 60s linear infinite; }
+.portrait .blob { position: absolute; bottom: -5%; left: -9%; width: 50%; aspect-ratio: 1; border-radius: 50%; background: var(--teal); }
+.portrait img { position: relative; display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; border-radius: 220px 220px var(--r) var(--r); border: 6px solid var(--paper); box-shadow: var(--shadow); }
+.portrait .tag { position: absolute; right: -8px; bottom: 24px; max-width: 220px; background: var(--paper); border: 1.5px solid var(--ink); border-radius: 12px; padding: 10px 14px; font: 500 var(--s-xs)/1.35 var(--f-mono); box-shadow: var(--shadow); animation: float 5s ease-in-out infinite; }
+.portrait .tag b { display: block; font: 800 1.25rem/1.1 var(--f-display); color: var(--coral-ink); margin-bottom: 2px; }
+@media (max-width: 860px) {
+  .hero { padding-top: 32px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
+  .portrait { order: -1; width: min(72%, 300px); }
+  .portrait .tag { right: -18%; bottom: 14px; }
+}
+
+/* ---------- stats ---------- */
+.stats { background: #0C171B; color: #F3EDE2; border-block: 1px solid #2B4049; padding-block: 44px; }
+.stats dl { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 24px; }
+.stats dl > div { display: flex; flex-direction: column; gap: 6px; border-left: 3px solid var(--orange); padding-left: 14px; min-width: 0; }
+.stats dl > div:nth-child(4n+2) { border-color: var(--teal); }
+.stats dl > div:nth-child(4n+3) { border-color: var(--coral); }
+.stats dt { order: 2; font-size: var(--s-sm); opacity: .85; }
+.stats dd { order: 1; margin: 0; font: 800 clamp(1.8rem, 3.6vw, 2.6rem)/1 var(--f-display); font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) { .stats dl { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; } }
+
+/* ---------- ops cases ---------- */
+.ops { display: grid; gap: 22px; }
+.op { display: grid; grid-template-columns: 220px 1fr; gap: 28px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 28px; box-shadow: var(--shadow); }
+.op-side { display: grid; align-content: start; gap: 10px; }
+.op-num { font: 500 var(--s-xs) var(--f-mono); color: var(--ink-soft); letter-spacing: .08em; }
+.op-side .big { font: 800 2.3rem/1 var(--f-display); color: var(--teal-ink); }
+.op-side .big + p { font-size: var(--s-sm); color: var(--ink-soft); }
+.op-body { display: grid; gap: 14px; min-width: 0; }
+.dar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 4px; }
+.dar > div { min-width: 0; }
+.dar h4 { margin: 0 0 6px; font: 500 var(--s-xs) var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--coral-ink); }
+.dar p, .dar li { font-size: var(--s-sm); }
+.dar ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+@media (max-width: 900px) { .op { grid-template-columns: 1fr; gap: 16px; padding: 22px; } .op-side { grid-template-columns: auto 1fr; align-items: center; column-gap: 14px; } .op-num { grid-column: 1 / -1; } .dar { grid-template-columns: 1fr; } }
+
+/* ---------- folder tabs + cards ---------- */
+.tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--ink); overflow-x: auto; scrollbar-width: none; }
+.tabs button { flex: none; border: 2px solid transparent; border-bottom: 0; background: var(--tab); color: var(--ink); padding: 10px 16px 8px; border-radius: 12px 18px 0 0; font: 600 var(--s-sm) var(--f-body); cursor: pointer; margin-bottom: -2px; transition: background .2s; }
+.tabs button[aria-selected="true"] { background: var(--paper); border-color: var(--ink); }
+.tabs button .n { font: 400 var(--s-xs) var(--f-mono); color: var(--ink-soft); margin-left: 6px; }
+.folder { background: var(--paper); border: 2px solid var(--ink); border-top: 0; border-radius: 0 0 var(--r) var(--r); padding: 24px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 960px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } .folder { padding: 14px; } .card .thumb, .card .ph { aspect-ratio: 16/7; } .card .ph { font-size: 1.9rem; } }
+.card { display: grid; grid-template-rows: auto 1fr; text-align: left; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--ink); padding: 0; overflow: hidden; cursor: pointer; font: inherit; transition: transform .2s, box-shadow .2s; animation: rise .45s both; }
+.card:hover { transform: translateY(-5px) rotate(-.4deg); box-shadow: var(--shadow); }
+.card .thumb { aspect-ratio: 16/10; width: 100%; height: auto; object-fit: cover; object-position: top; display: block; background: var(--tab); transition: transform .4s; }
+.card:hover .thumb { transform: scale(1.04); }
+.card .ph { aspect-ratio: 16/10; display: grid; place-items: center; padding: 18px; text-align: center; font: 800 2.3rem/1 var(--f-display); color: #FFFFFF; }
+.card .ph small { display: block; font: 500 var(--s-xs) var(--f-mono); letter-spacing: .06em; margin-top: 8px; text-transform: uppercase; opacity: .92; }
+.ph.c1 { background: #1E7A6C; } .ph.c2 { background: #B43F3A; } .ph.c3 { background: #0C171B; color: #F0A456; } .ph.c4 { background: #D9822B; }
+.card .cb { display: grid; gap: 8px; padding: 16px 18px 18px; align-content: start; }
+.card .cat { font: 500 var(--s-xs) var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--teal-ink); }
+.card h3 { font-size: 1.15rem; }
+.card p { font-size: var(--s-sm); color: var(--ink-soft); }
+.card .more { font: 500 var(--s-xs) var(--f-mono); color: var(--coral-ink); margin-top: 4px; }
+
+/* ---------- dialog ---------- */
+dialog { width: min(920px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); border: 2px solid var(--ink); border-radius: var(--r); padding: 0; background: var(--paper); color: var(--ink); }
+dialog[open] { animation: rise .3s both; }
+dialog::backdrop { background: rgba(5,12,15,.75); }
+.dlg-head { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: start; gap: 16px; padding: 20px 22px 14px; background: var(--paper); border-bottom: 1px solid var(--line); z-index: 1; }
+.dlg-head h3 { font-size: clamp(1.25rem, 4vw, 1.6rem); }
+.x { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--ink); background: transparent; color: var(--ink); font-size: 1.1rem; cursor: pointer; }
+.dlg-body { padding: 20px 22px 26px; display: grid; gap: 20px; }
+.dlg-body img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.facts span { font: 500 var(--s-xs) var(--f-mono); background: var(--tab); padding: 6px 10px; border-radius: 6px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 600px) { .pair { grid-template-columns: 1fr; } }
+
+.ba { position: relative; max-width: 420px; margin-inline: auto; width: 100%; aspect-ratio: 738/1220; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); user-select: none; touch-action: pan-y; }
+.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; }
+.ba .after { clip-path: inset(0 0 0 var(--pos, 50%)); }
+.ba .bar { position: absolute; top: 0; bottom: 0; left: var(--pos, 50%); width: 3px; background: var(--orange); transform: translateX(-50%); pointer-events: none; }
+.ba .bar::after { content: "⇆"; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 36px; height: 36px; border-radius: 50%; background: var(--orange); color: #1D2B33; display: grid; place-items: center; font-weight: 700; }
+.ba .lbl { position: absolute; top: 10px; font: 500 var(--s-xs) var(--f-mono); background: #1D2B33; color: #FFFFFF; padding: 4px 8px; border-radius: 4px; }
+.ba .lbl.l { left: 10px; } .ba .lbl.r { right: 10px; background: #1E7A6C; }
+.ba input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+
+.chart { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--ink); font-family: var(--f-mono); font-size: 13px; }
+.chart .grow { transform-box: fill-box; transform-origin: left; animation: growx .9s .2s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes growx { from { transform: scaleX(0); } }
+
+/* ---------- map ---------- */
+.map-wrap { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; align-items: stretch; }
+@media (max-width: 900px) { .map-wrap { grid-template-columns: 1fr; } }
+.map { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; min-width: 0; position: relative; }
+.map svg { width: 100%; height: auto; display: block; }
+.map .land { fill: var(--land); stroke: var(--paper); stroke-width: .6; }
+.map .land.on { fill: var(--teal); cursor: pointer; transition: fill .2s; }
+.map .land.on:hover, .map .land.sel { fill: var(--coral); }
+.map .pin { cursor: pointer; }
+.map .pin .dot { fill: var(--coral); stroke: var(--paper); stroke-width: 2; }
+.map .pin .ring { fill: none; stroke: var(--coral); stroke-width: 2; animation: pulse 2.2s ease-out infinite; }
+.map .pin.sel .dot { fill: var(--ink); }
+.map-fallback { padding: 40px 16px; text-align: center; color: var(--ink-soft); font-size: var(--s-sm); }
+.country-panel { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.country-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.country-chips button { font: 500 var(--s-xs) var(--f-mono); border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 6px 11px; cursor: pointer; }
+.country-chips button[aria-pressed="true"] { border-color: var(--coral); background: var(--coral); color: #FFFFFF; }
+.cp-detail { border-top: 1px dashed var(--line); padding-top: 14px; display: grid; gap: 10px; animation: rise .35s both; }
+.cp-detail h3 { font-size: 1.4rem; }
+.cp-detail ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.cp-detail li { display: flex; gap: 10px; align-items: baseline; font-size: var(--s-sm); }
+.cp-detail li span { font: 500 .72rem var(--f-mono); color: var(--teal-ink); text-transform: uppercase; letter-spacing: .05em; flex: none; }
+
+/* ---------- brand marquee ---------- */
+.marquee { overflow: hidden; border-block: 2px solid var(--ink); background: var(--orange); color: #1D2B33; padding-block: 14px; margin-top: 40px; }
+.marquee .track { display: flex; width: max-content; gap: 0; animation: marquee 38s linear infinite; }
+.marquee:hover .track { animation-play-state: paused; }
+.marquee span { font: 800 clamp(1.1rem, 2.6vw, 1.5rem)/1 var(--f-display); white-space: nowrap; padding-inline: 18px; }
+.marquee span::after { content: "✦"; margin-left: 36px; font-size: .8em; }
+
+/* ---------- timeline ---------- */
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; }
+.timeline li { display: grid; grid-template-columns: 150px 28px 1fr; gap: 18px; }
+.timeline .when { font: 500 var(--s-sm) var(--f-mono); padding-top: 4px; text-align: right; color: var(--ink-soft); }
+.timeline .rail { position: relative; }
+.timeline .rail::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--line); transform: translateX(-50%); }
+.timeline .rail::after { content: ""; position: absolute; left: 50%; top: 6px; width: 18px; height: 18px; border-radius: 50%; background: var(--coral); border: 3px solid var(--bg); transform: translateX(-50%); }
+.timeline li:nth-child(2) .rail::after { background: var(--teal); }
+.timeline li:nth-child(3) .rail::after { background: var(--orange); }
+.timeline .what { padding-bottom: 40px; display: grid; gap: 8px; min-width: 0; }
+.timeline .org { font: 500 var(--s-xs) var(--f-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--teal-ink); }
+.timeline details summary { cursor: pointer; font: 500 var(--s-sm) var(--f-mono); color: var(--coral-ink); list-style: none; width: fit-content; }
+.timeline details summary::-webkit-details-marker { display: none; }
+.timeline details summary::before { content: "+ "; }
+.timeline details[open] summary::before { content: "− "; }
+.timeline details[open] ul { animation: rise .35s both; }
+.timeline details ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 6px; font-size: var(--s-sm); }
+@media (max-width: 640px) {
+  .timeline li { grid-template-columns: 22px 1fr; column-gap: 14px; row-gap: 2px; }
+  .timeline .rail { grid-row: 1 / span 2; grid-column: 1; }
+  .timeline .when { grid-column: 2; text-align: left; padding: 0; }
+  .timeline .what { grid-column: 2; }
+}
+
+/* ---------- skills ---------- */
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; }
+.skill { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; display: grid; gap: 12px; align-content: start; transition: transform .2s, border-color .2s; }
+.skill:hover { transform: translateY(-3px); border-color: var(--teal); }
+.skill h3 { font-size: 1.15rem; }
+.skill .tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.skill .tools span { font: 500 var(--s-xs) var(--f-mono); background: var(--tab); padding: 5px 9px; border-radius: 6px; }
+.skill .proof { font-size: var(--s-sm); color: var(--ink-soft); border-top: 1px dashed var(--line); padding-top: 10px; }
+.skill .proof b { color: var(--ink); font-weight: 600; }
+
+/* ---------- education ---------- */
+.edu { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 860px) { .edu { grid-template-columns: 1fr; } }
+.panel { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 24px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 500 var(--s-sm) var(--f-body); border: 1.5px solid var(--ink); border-radius: 999px; padding: 5px 13px; }
+.chip.t { border-color: var(--teal-ink); color: var(--teal-ink); }
+.certs { list-style: none; margin: 0; padding: 0; display: grid; }
+.certs li { display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: var(--s-sm); }
+.certs li:last-child { border-bottom: 0; }
+.certs .y { font: 500 var(--s-sm) var(--f-mono); color: var(--coral-ink); font-variant-numeric: tabular-nums; }
+.certs b { font-weight: 600; display: block; }
+
+/* ---------- contact ---------- */
+.contact { background: #C24E48; color: #FFFFFF; border-radius: 28px; padding: 48px 32px; display: grid; gap: 20px; justify-items: start; position: relative; overflow: hidden; }
+.contact::after { content: ""; position: absolute; right: -90px; bottom: -90px; width: 300px; aspect-ratio: 1; border-radius: 50%; background: repeating-conic-gradient(#F0A456 0 9deg, transparent 9deg 18deg); opacity: .5; animation: spin 70s linear infinite; }
+.contact > * { position: relative; z-index: 1; }
+.contact h2 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 18ch; }
+.contact p { max-width: 52ch; }
+.contact .eyebrow { color: #FFE3C4; }
+.contact .btn { border-color: #FFFFFF; color: #FFFFFF; }
+.contact .btn.primary { background: #14232A; border-color: #14232A; color: #FFFFFF; }
+.contact .email-line { color: #FFFFFF; opacity: .9; font-size: var(--s-sm); }
+@media (max-width: 600px) { .contact { padding: 36px 22px; border-radius: 22px; } }
+footer { padding-block: 32px 48px; font: 400 var(--s-xs) var(--f-mono); color: var(--ink-soft); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; font: 500 var(--s-sm) var(--f-body); z-index: 50; animation: rise .25s both; }
+
+/* ---------- case visuals ---------- */
+.op { grid-template-columns: 300px 1fr; padding: 0; overflow: hidden; gap: 0; }
+.op-body { padding: 28px 30px; }
+.op-side { color: #FFFFFF; padding: 26px 24px; gap: 12px; position: relative; overflow: hidden; }
+.op-side.v1 { background: #1E7A6C; } .op-side.v2 { background: #B43F3A; } .op-side.v3 { background: #0C171B; }
+.op-side::after { content: ""; position: absolute; right: -60px; top: -60px; width: 160px; aspect-ratio: 1; border-radius: 50%; background: repeating-conic-gradient(rgba(255,255,255,.12) 0 9deg, transparent 9deg 18deg); }
+.op-side .op-num { color: rgba(255,255,255,.75); }
+.op-side .big { color: #FFFFFF; font-size: 2.6rem; }
+.op-side .big + p, .op-side p { color: rgba(255,255,255,.88); font-size: var(--s-sm); }
+.v3 .big { color: #F0A456; }
+.flow { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px; counter-reset: f; }
+.flow li { counter-increment: f; display: flex; align-items: center; gap: 10px; font: 500 var(--s-xs) var(--f-mono); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 8px; padding: 7px 10px; animation: lit 5s infinite; }
+.flow li::before { content: counter(f); display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: #F0A456; color: #1D2B33; font-size: .7rem; flex: none; }
+.flow li:nth-child(2) { animation-delay: 1s; } .flow li:nth-child(3) { animation-delay: 2s; } .flow li:nth-child(4) { animation-delay: 3s; } .flow li:nth-child(5) { animation-delay: 4s; }
+@keyframes lit { 0%, 18% { background: rgba(255,255,255,.28); border-color: #F0A456; } 22%, 100% { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.22); } }
+.donut { position: relative; width: 150px; margin-block: 4px; }
+.donut svg { width: 100%; height: auto; display: block; transform: rotate(-90deg); }
+.donut circle { fill: none; stroke-width: 13; }
+.donut .track-c { stroke: rgba(255,255,255,.2); }
+.donut .val { stroke: #F0A456; stroke-linecap: round; animation: dash 1.6s .3s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes dash { from { stroke-dasharray: 0 100; } }
+.donut span { position: absolute; inset: 0; display: grid; place-items: center; font: 800 2rem var(--f-display); }
+.coins { display: flex; gap: 6px; }
+.coins i { font-style: normal; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: #F0A456; color: #1D2B33; font: 600 .78rem var(--f-mono); box-shadow: inset 0 -3px 0 rgba(0,0,0,.18); animation: drop .5s cubic-bezier(.3,1.5,.5,1) both; }
+.coins i:nth-child(2) { animation-delay: .1s; } .coins i:nth-child(3) { animation-delay: .2s; } .coins i:nth-child(4) { animation-delay: .3s; } .coins i:nth-child(5) { animation-delay: .4s; }
+@keyframes drop { from { transform: translateY(-16px); opacity: 0; } }
+.iso { display: inline-flex; align-items: baseline; gap: 8px; width: fit-content; border: 1.5px solid #3FB5A3; color: #8FE3D5; border-radius: 999px; padding: 5px 12px; font: 600 var(--s-xs) var(--f-mono); }
+.iso small { font-weight: 400; color: rgba(255,255,255,.75); font-size: inherit; }
+@media (max-width: 900px) { .op { grid-template-columns: 1fr; } .op-side { grid-template-columns: none; } .op-body { padding: 22px; } }
+
+/* ---------- hero status ---------- */
+.hello { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.status { display: inline-flex; align-items: center; gap: 8px; font: 500 var(--s-xs) var(--f-mono); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px 5px 10px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: #2FA36B; box-shadow: 0 0 0 0 rgba(47,163,107,.6); animation: beacon 2s infinite; }
+@keyframes beacon { 70% { box-shadow: 0 0 0 8px rgba(47,163,107,0); } 100% { box-shadow: 0 0 0 0 rgba(47,163,107,0); } }
+
+/* ---------- marquee under hero ---------- */
+.marquee { margin-top: 0; padding-block: 0; display: grid; }
+.mq-label { font: 500 .72rem var(--f-mono); letter-spacing: .08em; text-transform: uppercase; padding: 10px 20px 0; text-align: center; color: #1D2B33; opacity: .75; }
+.mq-clip { overflow: hidden; padding-block: 8px 14px; }
+
+/* ---------- stats (4) ---------- */
+.stats { padding-block: 52px; }
+.stats dl > div { border-left: 0; padding-left: 0; gap: 10px; }
+.stats dd { font-size: clamp(2.6rem, 6vw, 4rem); color: #F0A456; }
+.stats dl > div:nth-child(2) dd { color: #55C9B6; } .stats dl > div:nth-child(3) dd { color: #F07A72; }
+.stats dt { order: 2; max-width: 26ch; }
+.stats dd { order: 1; }
+
+/* ---------- poster placeholders ---------- */
+.card .ph { position: relative; overflow: hidden; }
+.card .ph::before { content: ""; position: absolute; width: 180px; aspect-ratio: 1; right: -50px; bottom: -70px; border-radius: 50%; background: repeating-conic-gradient(rgba(255,255,255,.14) 0 9deg, transparent 9deg 18deg); transition: transform .6s; }
+.card:hover .ph::before { transform: rotate(40deg); }
+.card .ph > div { position: relative; }
+
+/* ---------- toolkit ---------- */
+.kit { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: start; }
+.kit-side { display: grid; gap: 24px; min-width: 0; }
+.kit-list { gap: 0; padding-block: 8px; }
+.kr { display: grid; grid-template-columns: 170px 1fr; gap: 14px; align-items: baseline; padding-block: 14px; border-bottom: 1px dashed var(--line); }
+.kr:last-child { border-bottom: 0; }
+.kr h3 { font-size: 1.02rem; }
+.kr .tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.kr .tools span { font: 500 var(--s-xs) var(--f-mono); background: var(--tab); padding: 5px 9px; border-radius: 6px; transition: background .2s, color .2s; }
+.kr:hover .tools span { background: var(--teal); color: #FFFFFF; }
+@media (max-width: 860px) { .kit { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .kr { grid-template-columns: 1fr; gap: 8px; } }
+.totop { text-decoration: none; }
+.totop:hover { color: var(--coral-ink); }
+
+.iso { display: grid; gap: 2px; border-radius: 10px; padding: 8px 12px; }
+.cards[data-count="4"] { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 601px) {
+  .card.feat { grid-column: span 2; }
+  .card.feat .thumb, .card.feat .ph { aspect-ratio: 33/10; }
+  .card.feat .ph { font-size: 3rem; }
+}
+
+.card .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; background: var(--bg); overflow: hidden; }
+.card .duo figure { margin: 0; position: relative; overflow: hidden; min-width: 0; }
+.card .duo img { width: 100%; height: 100%; object-fit: cover; object-position: center 2%; display: block; transition: transform .5s; }
+.card:hover .duo img { transform: scale(1.04); }
+.card .duo figcaption { position: absolute; left: 10px; top: 10px; font: 500 var(--s-xs) var(--f-mono); background: #1D2B33; color: #FFFFFF; padding: 4px 9px; border-radius: 4px; }
+.card .duo figure + figure figcaption { background: #1E7A6C; }
+.card .duo figure:first-child img { filter: saturate(.75); }
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="mono" href="#inicio" aria-label="Inicio">DM</a>
+    <ul>
+      <li><a href="#operaciones" data-en="Operations">Operaciones</a></li>
+      <li><a href="#casos" data-en="Case studies">Casos</a></li>
+      <li><a href="#alcance" data-en="Reach">Alcance</a></li>
+      <li><a href="#trayectoria" data-en="Experience">Trayectoria</a></li>
+      <li><a href="#contacto" data-en="Contact">Contacto</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="pill lang" id="langBtn" type="button" aria-label="Cambiar idioma / Switch language"><b data-l="es">ES</b>/<b data-l="en">EN</b></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="hello"><p class="eyebrow" data-en="Hi! I'm Diosmary">¡Hola! Soy Diosmary</p><span class="status"><i aria-hidden="true"></i><span data-en="Open to new roles">Abierta a nuevos roles</span></span></div>
+      <h1>Diosmary Maiz <span>Maestre</span></h1>
+      <p class="role"><b>Business Operations &amp; Project Manager</b> <span class="muted" data-en="8 years · US &amp; LATAM">8 años · EE. UU. y LATAM</span></p>
+      <p class="lede" data-en="I organize commercial operations, manage <strong>high-profile corporate accounts</strong> and turn undocumented processes into <strong>systems a team can scale</strong>. A biologist by training: I work with data, method and quality control.">Ordeno operaciones comerciales, cuido <strong>cuentas corporativas de alto perfil</strong> y convierto procesos sin documentar en <strong>sistemas que el equipo puede escalar</strong>. Bióloga de formación: trabajo con datos, método y control de calidad.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.linkedin.com/in/diosmary-maiz-maestre-089107133" target="_blank" rel="noopener" data-en="View LinkedIn ↗">Ver LinkedIn ↗</a>
+        <button class="btn" type="button" data-copy="diosmarymaiz1@gmail.com" data-en="Copy email">Copiar email</button>
+      </div>
+      <p class="email-line">diosmarymaiz1@gmail.com</p>
+    </div>
+    <div class="portrait">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="blob" aria-hidden="true"></div>
+      <img src="img/diosmary.jpg" alt="Diosmary Maiz Maestre" width="939" height="1174" fetchpriority="high">
+      <div class="tag"><b data-en="Tier-1 accounts">Cuentas Tier-1</b>Sony Pictures TV · Telemundo · Davivienda</div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-label="Marcas"><p class="mq-label" data-en="Accounts &amp; brands I've worked with">Cuentas y marcas con las que he trabajado</p><div class="mq-clip"><div class="track" id="marquee"></div></div></div>
+
+<section class="stats" aria-label="Cifras clave">
+  <div class="wrap">
+    <dl>
+      <div><dt data-en="years in commercial operations, accounts and digital projects">años en operaciones comerciales, cuentas y proyectos digitales</dt><dd data-n="8">8</dd></div>
+      <div><dt data-en="Tier-1 accounts managed at once in media, entertainment and banking">cuentas Tier-1 en simultáneo, de medios, entretenimiento y banca</dt><dd>5–8</dd></div>
+      <div><dt data-en="B2B account renewal rate">tasa de renovación de cuentas B2B</dt><dd data-n="90" data-pre="~" data-suf="%">~90%</dd></div>
+      <div><dt data-en="professionals coordinated in a cross-functional team">profesionales coordinados en un equipo multidisciplinario</dt><dd data-n="9">9</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="operaciones">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-en="Operations case studies">Casos de operaciones</p>
+      <h2 data-en="What I built behind the accounts">Lo que construí detrás de las cuentas</h2>
+      <p class="muted" data-en="At Betr Media (2022 – present) I run the full commercial operation for media, entertainment and banking clients: accounts, team, billing, collections and quality. These are the systems that hold it together.">En Betr Media (2022 – presente) dirijo la operación comercial completa para clientes de medios, entretenimiento y banca: cuentas, equipo, facturación, cobranza y calidad. Estos son los sistemas que la sostienen.</p>
+    </div>
+    <div class="ops">
+      <article class="op reveal">
+        <div class="op-side v1">
+          <span class="op-num" data-en="CASE 01 · BETR MEDIA">CASO 01 · BETR MEDIA</span>
+          <span class="big">0 → 1</span>
+          <p data-en="the company's first CRM and the commercial flow it runs on">el primer CRM de la compañía y el flujo comercial que lo sostiene</p>
+          <ol class="flow" aria-label="Flujo comercial">
+            <li data-en="Proposal">Propuesta</li><li data-en="Contract">Contrato</li><li data-en="Billing">Facturación</li><li data-en="Collections">Cobranza</li><li data-en="Satisfaction (CSAT)">Satisfacción (CSAT)</li>
+          </ol>
+        </div>
+        <div class="op-body">
+          <h3 data-en="A commercial operations department built from scratch">Un departamento de operaciones comerciales construido desde cero</h3>
+          <div class="dar">
+            <div><h4 data-en="Challenge">Desafío</h4><p data-en="Client, proposal and billing information lived in emails, chats and scattered files. There were no documented processes and no way to measure the team.">La información de clientes, propuestas y facturación vivía en correos, chats y archivos sueltos. No había procesos documentados ni forma de medir al equipo.</p></div>
+            <div><h4 data-en="Action">Acción</h4><ul data-en="<li>Designed the department's architecture and its first CRM database.</li><li>Structured the proposal → contract → billing flow.</li><li>Built the performance matrix, KPIs and CSAT surveys.</li>"><li>Diseñé la arquitectura del área y su primera base de datos en CRM.</li><li>Estructuré el flujo propuesta → contrato → facturación.</li><li>Creé la matriz de desempeño, KPIs y encuestas CSAT.</li></ul></div>
+            <div><h4 data-en="Result">Resultado</h4><ul data-en="<li>Every active account in one system, with a traceable history.</li><li>Productivity tracking for 9 professionals.</li><li>Executive reports for C-level decisions.</li>"><li>Todas las cuentas activas en un solo sistema, con historial trazable.</li><li>Seguimiento de productividad de 9 profesionales.</li><li>Informes ejecutivos para decisiones de dirección (C-Level).</li></ul></div>
+          </div>
+        </div>
+      </article>
+      <article class="op reveal">
+        <div class="op-side v2">
+          <span class="op-num" data-en="CASE 02 · BETR MEDIA">CASO 02 · BETR MEDIA</span>
+          <div class="donut" role="img" aria-label="~90%">
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="track-c"/><circle cx="60" cy="60" r="50" class="val" pathLength="100" stroke-dasharray="90 100"/></svg>
+            <span>~90%</span>
+          </div>
+          <p data-en="of accounts renew. Multi-year relationships, such as Telemundo.">de las cuentas renuevan. Relaciones de varios años, como Telemundo.</p>
+        </div>
+        <div class="op-body">
+          <h3 data-en="Tier-1 accounts that keep renewing">Cuentas Tier-1 que renuevan</h3>
+          <div class="dar">
+            <div><h4 data-en="Challenge">Desafío</h4><p data-en="A portfolio of 5 to 8 accounts, including Sony Pictures Television, Telemundo, TelevisaUnivision (ViX), Ecuavisa and Banco Davivienda, each with its own deliverables, SLAs and renewal cycle.">Un portafolio de 5 a 8 cuentas, entre ellas Sony Pictures Television, Telemundo, TelevisaUnivision (ViX), Ecuavisa y Banco Davivienda, cada una con sus entregables, SLAs y ciclo de renovación.</p></div>
+            <div><h4 data-en="Action">Acción</h4><ul data-en="<li>Brand diagnostics and annual financial projections per account.</li><li>Renewal strategies and new business opportunities.</li><li>Landing-page style proposals and pitches built with generative AI.</li>"><li>Diagnósticos de marca y proyecciones financieras anuales por cuenta.</li><li>Estrategias de renovación y nuevas oportunidades comerciales.</li><li>Propuestas tipo landing page y pitches creados con IA generativa.</li></ul></div>
+            <div><h4 data-en="Result">Resultado</h4><ul data-en="<li>Renewal rate close to 90%.</li><li>Faster, traceable client onboarding.</li><li>Accounts with multi-year lifecycles.</li>"><li>Tasa de renovación cercana al 90%.</li><li>Onboarding de clientes más rápido y trazable.</li><li>Cuentas con ciclo de vida de varios años.</li></ul></div>
+          </div>
+        </div>
+      </article>
+      <article class="op reveal">
+        <div class="op-side v3">
+          <span class="op-num" data-en="CASE 03 · BETR MEDIA">CASO 03 · BETR MEDIA</span>
+          <span class="big">USD 20K+</span>
+          <div class="coins" aria-hidden="true"><i>4K</i><i>4K</i><i>4K</i><i>4K</i><i>4K</i></div>
+          <p data-en="recovered from 5 clients with overdue payments, on services starting at USD 4,000">recuperados de 5 clientes con pagos vencidos, en servicios desde USD 4.000</p>
+          <span class="iso">✓ ISO 9001 <small data-en="audited since 2022">auditada desde 2022</small></span>
+        </div>
+        <div class="op-body">
+          <h3 data-en="Monthly collections, client satisfaction and ISO 9001 quality">Cobranza mensual, satisfacción del cliente y calidad ISO 9001</h3>
+          <div class="dar">
+            <div><h4 data-en="Challenge">Desafío</h4><p data-en="Cash flow depends on collecting on time from large corporate clients with long payment cycles, while keeping them satisfied and meeting the company's ISO 9001 certification.">El flujo de caja depende de cobrar a tiempo a clientes corporativos con ciclos de pago largos, mantenerlos satisfechos y cumplir la certificación ISO 9001 de la empresa.</p></div>
+            <div><h4 data-en="Action">Acción</h4><ul data-en="<li>Monthly collections management for every client in the portfolio.</li><li>Ongoing client satisfaction follow-up.</li><li>Recovery of overdue accounts, client by client.</li><li>Internal quality controls and process documentation.</li>"><li>Gestión de cobranza mensual a todos los clientes del portafolio.</li><li>Seguimiento continuo de la satisfacción de cada cliente.</li><li>Recuperación de cartera vencida, cliente por cliente.</li><li>Controles internos y documentación de procesos.</li></ul></div>
+            <div><h4 data-en="Result">Resultado</h4><ul data-en="<li>Overdue payments recovered from 5 clients (USD 20K+).</li><li>Standardized billing and collection cycle.</li><li>ISO 9001 audit passed every year since 2022.</li>"><li>Pagos vencidos recuperados de 5 clientes (USD 20K+).</li><li>Ciclo de facturación y cobro estandarizado.</li><li>Auditoría ISO 9001 aprobada cada año desde 2022.</li></ul></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="casos" style="padding-top: 16px;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-en="Portfolio">Portafolio</p>
+      <h2 data-en="Case studies">Casos de estudio</h2>
+      <p class="muted" data-en="Open each card to see the challenge, what I did and the result.">Abre cada ficha para ver el desafío, lo que hice y el resultado.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Filtrar casos">
+      <button role="tab" id="tab-all" aria-selected="true" data-filter="all"><span data-en="All">Todos</span><span class="n"></span></button>
+      <button role="tab" id="tab-media" aria-selected="false" data-filter="media"><span data-en="Accounts &amp; media">Cuentas y medios</span><span class="n"></span></button>
+      <button role="tab" id="tab-mkt" aria-selected="false" data-filter="mkt"><span data-en="Brand &amp; digital">Marca y digital</span><span class="n"></span></button>
+    </div>
+    <div class="folder" role="tabpanel" aria-labelledby="tab-all">
+      <div class="cards" id="cards"></div>
+    </div>
+  </div>
+</section>
+
+<section id="alcance" style="padding-top: 16px; padding-bottom: 0;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-en="Reach">Alcance</p>
+      <h2 data-en="Projects in 9 countries">Proyectos en 9 países</h2>
+      <p class="muted" data-en="Tap a country on the map or in the list to see the brands I worked with there.">Toca un país en el mapa o en la lista para ver las marcas con las que trabajé ahí.</p>
+    </div>
+    <div class="map-wrap">
+      <div class="map reveal" id="map"><div class="map-fallback" data-en="Loading map…">Cargando mapa…</div></div>
+      <div class="country-panel reveal">
+        <div class="country-chips" id="countryChips"></div>
+        <div class="cp-detail" id="countryDetail"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trayectoria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-en="Experience">Trayectoria</p>
+      <h2 data-en="8 years, 3 stages">8 años, 3 etapas</h2>
+    </div>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="when" data-en="2022 – now">2022 – hoy</span><span class="rail" aria-hidden="true"></span>
+        <div class="what">
+          <span class="org" data-en="Betr Media SAS · Colombia, operating for Betr Media Inc (US) · Hybrid">Betr Media SAS · Colombia, opera para Betr Media Inc (EE. UU.) · Híbrido</span>
+          <h3 data-en="Commercial Coordinator">Coordinadora Comercial</h3>
+          <p class="muted" data-en="I built the commercial operations department and manage Tier-1 international accounts in media, entertainment and banking.">Construí el área de operaciones comerciales y gestiono cuentas internacionales Tier-1 de medios, entretenimiento y banca.</p>
+          <details>
+            <summary data-en="See achievements">Ver logros</summary>
+            <ul data-en="<li>Designed and launched the department from scratch: first centralized database, CRM workflows and operational records.</li><li>Led a portfolio of 5 to 8 strategic accounts in the US, Puerto Rico, Mexico, Colombia, Brazil, Ecuador and Chile.</li><li>Built the performance matrix, KPI tracking and CSAT surveys for a team of 9.</li><li>Integrated generative AI into account proposals and reports: landing-page proposals and strategic pitches.</li><li>Run monthly billing and collections for every client; recovered overdue payments from 5 clients.</li><li>Aligned the commercial department with the ISO 9001 quality management system.</li>"><li>Diseñé e implementé el departamento desde cero: primera base de datos centralizada, flujos de CRM y registros operacionales.</li><li>Lideré un portafolio de 5 a 8 cuentas estratégicas en EE. UU., Puerto Rico, México, Colombia, Brasil, Ecuador y Chile.</li><li>Diseñé la matriz de desempeño, el seguimiento de KPIs y encuestas CSAT para un equipo de 9 profesionales.</li><li>Integré IA generativa en propuestas y reportes de cuentas: propuestas tipo landing page y pitches estratégicos.</li><li>Gestiono la facturación y la cobranza mensual de todos los clientes; recuperé cartera vencida de 5 clientes.</li><li>Alineé el área comercial con el sistema de gestión de calidad ISO 9001.</li></ul>
+          </details>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="when">2020 – 2022</span><span class="rail" aria-hidden="true"></span>
+        <div class="what">
+          <span class="org" data-en="Bosque Nagal SAS · Remote">Bosque Nagal SAS · Remoto</span>
+          <h3 data-en="Operations Director &amp; Science Lead">Directora de Operaciones y Líder Científica</h3>
+          <p class="muted" data-en="I combined business administration with scientific rigor in tropical dry forest conservation projects.">Uní la gestión administrativa con el rigor biológico en proyectos de conservación del bosque seco tropical.</p>
+          <details>
+            <summary data-en="See achievements">Ver logros</summary>
+            <ul data-en="<li>Centralized billing, DIAN tax compliance and collections in a CRM.</li><li>Led the Seven &amp; Seven alliance: an eco product line and a reforestation campaign of ~30,000 trees.</li><li>Ran digital marketing and the website restyling; optimized lead-generation funnels.</li><li>As quality analyst, removed operational bottlenecks and prepared proposals, cost estimates and financial projections.</li>"><li>Centralicé en CRM la facturación, el cumplimiento ante la DIAN y la gestión de cobranza.</li><li>Lideré la alianza Seven &amp; Seven: línea ecológica y campaña de reforestación de ~30.000 árboles.</li><li>Dirigí el marketing digital y el restyling del sitio web; optimicé embudos de captación de leads.</li><li>Como analista de calidad, eliminé cuellos de botella y elaboré propuestas, costos y proyecciones financieras.</li></ul>
+          </details>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="when">2018 – 2020</span><span class="rail" aria-hidden="true"></span>
+        <div class="what">
+          <span class="org" data-en="Freelance · Remote">Independiente · Remoto</span>
+          <h3 data-en="Digital Marketing Consultant">Consultora de Marketing Digital</h3>
+          <p class="muted" data-en="Strategy, content and visual identity for 15+ brands in the US, Puerto Rico, Portugal, Chile, Colombia and Venezuela.">Estrategia, contenido e identidad visual para más de 15 marcas en EE. UU., Puerto Rico, Portugal, Chile, Colombia y Venezuela.</p>
+          <details>
+            <summary data-en="See achievements">Ver logros</summary>
+            <ul data-en="<li>Managed brands in parallel, including Fished, Crush Coffee, Glenda Vanessa Mentora, Web 3 Sapiens (Lisbon) and Coral Voces de Santander.</li><li>Designed visual identities, brand guidelines and websites.</li><li>Built multichannel editorial calendars and lead-focused copy.</li><li>Analyzed organic metrics to adjust campaigns and engagement.</li>"><li>Gestioné en simultáneo marcas como Fished, Crush Coffee, Glenda Vanessa Mentora, Web 3 Sapiens (Lisboa) y Coral Voces de Santander.</li><li>Diseñé identidades visuales, manuales de marca y sitios web.</li><li>Estructuré calendarios editoriales multicanal y textos orientados a captar clientes.</li><li>Analicé métricas orgánicas para ajustar campañas y engagement.</li></ul>
+          </details>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="habilidades" style="padding-top: 8px;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-en="Toolkit &amp; education">Herramientas y formación</p>
+      <h2 data-en="What I work with">Con qué trabajo</h2>
+    </div>
+    <div class="kit">
+      <div class="panel kit-list reveal">
+        <div class="kr"><h3 data-en="Accounts &amp; projects">Cuentas y proyectos</h3><div class="tools"><span>Key Account Management</span><span>Stakeholders</span><span data-en="Retention">Retención</span><span data-en="Team leadership">Liderazgo de equipos</span></div></div>
+        <div class="kr"><h3 data-en="Operations &amp; quality">Operaciones y calidad</h3><div class="tools"><span data-en="Process mapping">Mapeo de procesos</span><span>KPIs</span><span>CSAT</span><span>ISO 9001</span><span data-en="Billing &amp; collections">Facturación y cobranza</span></div></div>
+        <div class="kr"><h3>CRM</h3><div class="tools"><span>HubSpot</span><span>Salesforce</span><span>Bitrix24</span><span>Slack</span><span>Trello</span><span>Notion</span></div></div>
+        <div class="kr"><h3 data-en="Data">Datos</h3><div class="tools"><span data-en="Advanced Excel">Excel avanzado</span><span data-en="Exploratory analysis">Análisis exploratorio</span><span>SQL</span><span>Python</span></div></div>
+        <div class="kr"><h3 data-en="AI &amp; prototyping">IA y prototipado</h3><div class="tools"><span>Claude</span><span>ChatGPT</span><span>HTML</span><span>VS Code</span></div></div>
+        <div class="kr"><h3 data-en="Media &amp; marketing">Medios y marketing</h3><div class="tools"><span>Content ID</span><span>AdSense</span><span>Meta Ads</span><span>Google Display</span><span>Canva</span><span>Copywriting</span></div></div>
+      </div>
+      <div class="kit-side">
+        <div class="panel reveal">
+          <p class="eyebrow" data-en="Education">Formación</p>
+          <h3 data-en="B.S. in Biology, Cum Laude">Licenciatura en Biología, Cum Laude</h3>
+          <p class="muted">Universidad de Oriente (UDO), Venezuela · 2021</p>
+          <div class="chips"><span class="chip" data-en="Spanish · native">Español · nativo</span><span class="chip" data-en="English · B1+ intermediate-advanced">Inglés · B1+ intermedio-avanzado</span></div>
+        </div>
+        <div class="panel reveal">
+          <p class="eyebrow" data-en="Certifications">Certificaciones</p>
+          <ul class="certs">
+            <li><span class="y">2026</span><span data-en="<b>Google Data Analytics Professional Certificate</b>Google / Coursera"><b>Certificado Profesional de Análisis de Datos</b>Google / Coursera</span></li>
+            <li><span class="y">2026</span><span data-en="<b>Marketing Products and Services with AI</b>Bootcamp"><b>Comercialización de Productos y Servicios con IA</b>Bootcamp</span></li>
+            <li><span class="y">2023</span><span><b>English for Career Development</b>University of Pennsylvania (Coursera)</span></li>
+            <li><span class="y">2019</span><span data-en="<b>Digital Marketing Specialist</b>Universidad Austral, Argentina"><b>Especialista en Marketing Digital</b>Universidad Austral, Argentina</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="contact reveal">
+      <p class="eyebrow" data-en="Contact">Contacto</p>
+      <h2 data-en="Looking for someone to bring order to operations?">¿Buscas a alguien que ordene la operación?</h2>
+      <p data-en="I'm open to Business Operations, Project Management and Key Account Management roles, remote or hybrid.">Estoy abierta a roles de Business Operations, Project Management y Key Account Management, remotos o híbridos.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.linkedin.com/in/diosmary-maiz-maestre-089107133" target="_blank" rel="noopener" data-en="Message me on LinkedIn ↗">Escríbeme en LinkedIn ↗</a>
+        <button class="btn" type="button" data-copy="diosmarymaiz1@gmail.com" data-en="Copy email">Copiar email</button>
+      </div>
+      <p class="email-line">diosmarymaiz1@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Diosmary Maiz Maestre</span>
+    <span data-en="Prototyped with generative AI and HTML">Prototipado con IA generativa y HTML</span>
+    <a class="totop" href="#inicio" data-en="Back to top ↑">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg-head">
+    <div><p class="eyebrow" id="dlgCat"></p><h3 id="dlgTitle"></h3></div>
+    <button class="x" type="button" id="dlgClose" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="dlg-body" id="dlgBody"></div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+let lang = "es";
+try { lang = localStorage.getItem("dm-lang") || (navigator.language || "es").slice(0, 2) === "en" && "en" || "es"; } catch (e) {}
+const L = (es, en) => lang === "en" ? en : es;
+const CAT = { media: ["Cuentas y medios", "Accounts & media"], ops: ["Operaciones", "Operations"], mkt: ["Marca y digital", "Brand & digital"] };
+const dar = (c, a, r) => `<div class="dar"><div><h4>${L("Desafío","Challenge")}</h4>${c}</div><div><h4>${L("Acción","Action")}</h4>${a}</div><div><h4>${L("Resultado","Result")}</h4>${r}</div></div>`;
+
+const CASES = [
+  { cat: "media", feat: true, t: ["Canales de Sony, Telemundo, Ecuavisa y ViX", "Channels for Sony, Telemundo, Ecuavisa and ViX"], ph: ["20+", ["canales", "channels"], "c1"],
+    s: ["Operación de más de 20 canales de cine y TV de Sony Pictures Television, Telemundo, Ecuavisa y TelevisaUnivision (ViX).", "Operations for 20+ film and TV channels for Sony Pictures Television, Telemundo, Ecuavisa and TelevisaUnivision (ViX)."],
+    body: () => `<div class="facts"><span>Sony Pictures Television</span><span>Telemundo</span><span>Ecuavisa</span><span>TelevisaUnivision · ViX</span></div>
+      <div class="facts"><span>${L("20+ canales","20+ channels")}</span><span>${L("2.500+ min/mes de postproducción","2,500+ post-production min/month")}</span><span>SLA 24h / 48h</span><span>Streaming 24/7</span></div>` +
+      dar(`<p>${L("Un volumen alto y constante de piezas de postproducción para estudios y cadenas globales, con plazos de entrega estrictos.","A high, steady volume of post-production work for global studios and networks, with strict delivery deadlines.")}</p>`,
+        `<ul>${L("<li>Coordinación de flujos de postproducción de más de 2.500 minutos al mes.</li><li>Control del cumplimiento de SLAs de 24 y 48 horas.</li><li>Estrategias de streaming 24/7.</li>","<li>Coordinated post-production workflows of 2,500+ minutes per month.</li><li>Tracked compliance with 24h and 48h SLAs.</li><li>24/7 streaming strategies.</li>")}</ul>`,
+        `<ul>${L("<li>Operación estable para cuentas Tier-1 de entretenimiento.</li><li>Canales con alcance de millones de vistas.</li>","<li>Stable operations for Tier-1 entertainment accounts.</li><li>Channels reaching millions of views.</li>")}</ul>`) },
+  { cat: "media", t: ["Transmisiones en vivo para Davivienda", "Live broadcasts for Davivienda"], ph: ["96+", ["eventos al año", "events per year"], "c2"],
+    s: ["Coordinación de más de 96 transmisiones al año para Banco Davivienda y Davivienda Corredores.", "Coordination of 96+ broadcasts a year for Banco Davivienda and Davivienda Corredores."],
+    body: () => `<div class="facts"><span>Banco Davivienda</span><span>Davivienda Corredores</span><span>${L("96+ eventos/año","96+ events/year")}</span><span>YouTube · LinkedIn · Facebook</span></div>` +
+      dar(`<p>${L("Eventos institucionales de alta visibilidad en varias plataformas a la vez y sin margen de error.","High-visibility corporate events streamed on several platforms at once, with no room for error.")}</p>`,
+        `<ul>${L("<li>Coordinación técnica y operativa de cada transmisión.</li><li>Sets de TV corporativos en paralelo.</li><li>Distribución simultánea en tres plataformas.</li>","<li>Technical and operational coordination of every broadcast.</li><li>Parallel corporate TV sets.</li><li>Simultaneous distribution on three platforms.</li>")}</ul>`,
+        `<ul>${L("<li>Más de 96 eventos al año entregados.</li><li>Relación de largo plazo con la cuenta.</li>","<li>96+ events delivered per year.</li><li>Long-term relationship with the account.</li>")}</ul>`) },
+  { cat: "media", t: ["Auditoría de YouTube para Distroller", "YouTube audit for Distroller"], ph: ["6,8%", ["CTR de miniaturas", "thumbnail CTR"], "c3"],
+    s: ["Modelo de rendimiento para mejorar la distribución orgánica en recomendados y búsqueda.", "A performance model to improve organic distribution in suggested and search."],
+    body: () => `<div class="facts"><span>CTR ${L("4,6% → 6,8%","4.6% → 6.8%")}</span><span>Velocity 24h: ${L("1,25x","1.25x")}</span><span>${L("Retención del hook &gt;75%","Hook retention &gt;75%")}</span></div>
+      <div class="chart" role="img" aria-label="${L("CTR de miniaturas: de 4,6% a 6,8%, por encima de la meta de 6,5%","Thumbnail CTR: from 4.6% to 6.8%, above the 6.5% target")}">
+        <svg viewBox="0 0 520 170">
+          <line x1="110" y1="26" x2="110" y2="150" stroke="var(--line)" stroke-width="2"/>
+          <text x="100" y="66" text-anchor="end">${L("Antes","Before")}</text>
+          <rect class="grow" x="110" y="48" width="${4.6/8*340}" height="28" rx="4" fill="var(--ink-soft)"/>
+          <text x="${118+4.6/8*340}" y="67">${L("4,6%","4.6%")}</text>
+          <text x="100" y="121" text-anchor="end">${L("Después","After")}</text>
+          <rect class="grow" x="110" y="103" width="${6.8/8*340}" height="28" rx="4" fill="var(--teal)"/>
+          <text x="${118+6.8/8*340}" y="122">${L("6,8%","6.8%")}</text>
+          <line x1="${110+6.5/8*340}" y1="28" x2="${110+6.5/8*340}" y2="146" stroke="var(--coral)" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="${110+6.5/8*340}" y="18" text-anchor="middle">${L("meta 6,5%","target 6.5%")}</text>
+        </svg>
+      </div>` +
+      dar(`<p>${L("Videos de una marca infantil muy reconocida que no llegaban a recomendados ni a búsqueda.","Videos from a well-known kids' brand that weren't reaching suggested or search.")}</p>`,
+        `<ul>${L("<li>Auditoría de la curva de retención y del gancho de los primeros 30 segundos.</li><li>Re-hooks a mitad de video.</li><li>Pruebas de miniaturas contra una meta de CTR.</li>","<li>Audited the retention curve and the first-30-seconds hook.</li><li>Mid-video re-hooks.</li><li>Thumbnail tests against a CTR target.</li>")}</ul>`,
+        `<ul>${L("<li>CTR de 4,6% a 6,8%.</li><li>Tracción temprana de 1,25x en las primeras 24 horas.</li>","<li>CTR from 4.6% to 6.8%.</li><li>1.25x early traction in the first 24 hours.</li>")}</ul>`) },
+  { cat: "media", t: ["Catálogos VOD y monetización", "VOD catalogs and monetization"], ph: ["1.900", ["piezas VOD", "VOD pieces"], "c4"],
+    s: ["Back-optimization de catálogos históricos, derechos con Content ID y pauta multicanal.", "Back-optimization of legacy catalogs, Content ID rights and multichannel paid media."],
+    body: () => `<div class="facts"><span>${L("1.000 a 1.900 piezas por catálogo","1,000 to 1,900 pieces per catalog")}</span><span>Content ID</span><span>AdSense</span><span>Meta Ads · Google Display</span></div>` +
+      dar(`<p>${L("Catálogos con años de contenido subutilizado y derechos sin gestionar.","Catalogs with years of underused content and unmanaged rights.")}</p>`,
+        `<ul>${L("<li>Auditoría y re-optimización de metadatos del catálogo histórico.</li><li>Gestión de derechos con Content ID.</li><li>Pauta en Meta Ads y Google Display.</li>","<li>Audited and re-optimized legacy catalog metadata.</li><li>Rights management with Content ID.</li><li>Paid media on Meta Ads and Google Display.</li>")}</ul>`,
+        `<ul>${L("<li>Catálogos ordenados y monetizables en varias plataformas.</li><li>Campañas transmedia para creadores, medios y marcas.</li>","<li>Organized catalogs, monetizable across platforms.</li><li>Transmedia campaigns for creators, media and brands.</li>")}</ul>`) },
+  { cat: "mkt", lab: ["Operaciones y marca", "Operations & brand"], t: ["Bosque Nagal: operaciones y reforestación", "Bosque Nagal: operations and reforestation"], img: "img/bosque-nagal-web.jpg",
+    s: ["Procesos en CRM, restyling web y la alianza que sembró ~30.000 árboles.", "CRM processes, a website restyling and the alliance that planted ~30,000 trees."],
+    body: () => `<img src="img/bosque-nagal-web.jpg" alt="${L("Sitio web de Bosque Nagal después del restyling","Bosque Nagal website after the restyling")}">
+      <div class="facts"><span>${L("~30.000 árboles","~30,000 trees")}</span><span>${L("Alianza Seven &amp; Seven","Seven &amp; Seven alliance")}</span><span>${L("CRM · DIAN · cobranza","CRM · tax compliance · collections")}</span></div>` +
+      dar(`<p>${L("Una empresa de conservación de bosque seco tropical con procesos administrativos dispersos y un sitio web que no conectaba con empresas ni personas.","A tropical dry forest conservation company with scattered admin processes and a website that didn't connect with companies or individuals.")}</p>`,
+        `<ul>${L("<li>Centralicé facturación, cumplimiento ante la DIAN y cobranza en CRM.</li><li>Restyling completo del sitio y mejoras de experiencia de usuario.</li><li>Narrativa de marca orientada a la conservación.</li>","<li>Centralized billing, tax compliance and collections in a CRM.</li><li>Full website restyling and UX improvements.</li><li>Conservation-focused brand storytelling.</li>")}</ul>`,
+        `<ul>${L("<li>Plataforma enfocada en la adopción de árboles por personas y empresas.</li><li>Campaña de reforestación de ~30.000 árboles con la alianza Seven &amp; Seven.</li>","<li>A platform focused on tree adoption by individuals and companies.</li><li>~30,000-tree reforestation campaign with the Seven &amp; Seven alliance.</li>")}</ul>`) },
+  { cat: "mkt", feat: true, ba: true, t: ["Coral Voces de Santander", "Coral Voces de Santander"], img: "img/coral-despues.jpg",
+    s: ["Nueva línea gráfica para una coral de Colombia. Desliza para ver el antes y el después.", "A new visual identity for a Colombian choir. Slide to compare before and after."],
+    body: () => `<div class="ba" id="ba"><img src="img/coral-antes.jpg" alt="${L("Feed antes del rediseño","Feed before the redesign")}"><img class="after" src="img/coral-despues.jpg" alt="${L("Feed después del rediseño","Feed after the redesign")}"><span class="bar"></span><span class="lbl l">${L("Antes","Before")}</span><span class="lbl r">${L("Después","After")}</span><input type="range" min="0" max="100" value="50" aria-label="${L("Comparar antes y después","Compare before and after")}" id="baRange"></div>` +
+      dar(`<p>${L("Una paleta indefinida y tipografías en competencia saturaban los canales y afectaban el prestigio institucional.","An undefined palette and competing typefaces cluttered the channels and hurt the choir's institutional image.")}</p>`,
+        `<ul>${L("<li>Arquitectura de marca y línea gráfica.</li><li>Diseño de grid e identidad.</li><li>Copywriting temático y editorial.</li>","<li>Brand architecture and visual guidelines.</li><li>Grid and identity design.</li><li>Thematic and editorial copywriting.</li>")}</ul>`,
+        `<p>${L("Un feed coherente que refleja la elegancia, la simetría y el nivel artístico de la coral.","A consistent feed that reflects the choir's elegance, symmetry and artistic level.")}</p>`) },
+  { cat: "mkt", t: ["Web 3 Sapiens · Lisboa", "Web 3 Sapiens · Lisbon"], img: "img/web3sapiens.jpg",
+    s: ["Contenido, diseño y reels para una comunidad cripto.", "Content, design and reels for a crypto community."],
+    body: () => `<img src="img/web3sapiens.jpg" alt="${L("Perfil de Instagram de Web 3 Sapiens","Web 3 Sapiens Instagram profile")}">` +
+      dar(`<p>${L("Una comunidad Web3 que necesitaba presencia constante y una línea visual reconocible.","A Web3 community that needed a steady presence and a recognizable visual style.")}</p>`,
+        `<ul>${L("<li>Creación y programación de contenido.</li><li>Optimización de perfiles en redes sociales.</li><li>Diseño de posts y edición de reels.</li>","<li>Content creation and scheduling.</li><li>Social media profile optimization.</li><li>Post design and reel editing.</li>")}</ul>`,
+        `<p>${L("Presencia en redes clara, organizada y acorde a la línea gráfica de la marca, para una comunidad cripto activa.","A clear, organized social presence aligned with the brand's visual style, for an active crypto community.")}</p>`) },
+  { cat: "mkt", t: ["Fished Digital Marketing · EE. UU.", "Fished Digital Marketing · US"], img: "img/fished-web.jpg",
+    s: ["Diseño web, copywriting completo y perfiles sociales para una agencia.", "Web design, full copywriting and social profiles for an agency."],
+    body: () => `<div class="pair"><img src="img/fished-web.jpg" alt="${L("Inicio del sitio de Fished","Fished website homepage")}"><img src="img/fished-ig.jpg" alt="${L("Perfil de Instagram de Fished","Fished Instagram profile")}"></div>
+      <div class="facts"><span>${L("157 publicaciones","157 posts")}</span><span>${L("1.054 seguidores","1,054 followers")}</span></div>` +
+      dar(`<p>${L("Una agencia de marketing que necesitaba un sitio y perfiles a la altura de los servicios que vende.","A marketing agency that needed a website and profiles that matched the services it sells.")}</p>`,
+        `<ul>${L("<li>Diseño de la página web.</li><li>Copywriting web completo.</li><li>Optimización de perfiles en redes.</li>","<li>Website design.</li><li>Full website copywriting.</li><li>Social profile optimization.</li>")}</ul>`,
+        `<p>${L("Una web limpia e intuitiva, pensada para una buena experiencia de usuario.","A clean, intuitive website built for a good user experience.")}</p>`) },
+  { cat: "mkt", t: ["Glenda Vanessa · Puerto Rico", "Glenda Vanessa · Puerto Rico"], img: "img/glenda-vanessa.jpg",
+    s: ["Renovación de identidad visual para una mentora de negocios.", "A visual identity refresh for a business mentor."],
+    body: () => `<img src="img/glenda-vanessa.jpg" alt="${L("Publicación de Glenda Vanessa Mentora","Glenda Vanessa Mentora post")}">` +
+      dar(`<p>${L("Un proyecto nacido durante el confinamiento que necesitaba una marca alineada con su nuevo rumbo comercial.","A project born during lockdown that needed a brand aligned with its new business direction.")}</p>`,
+        `<ul>${L("<li>Actualización de la identidad visual.</li><li>Optimización de perfiles en redes sociales.</li>","<li>Visual identity update.</li><li>Social media profile optimization.</li>")}</ul>`,
+        `<p>${L("Una marca personal más fresca y coherente con sus servicios de mentoría.","A fresher personal brand, consistent with her mentoring services.")}</p>`) },
+  { cat: "mkt", t: ["Dr. Darwin Medina · Colombia", "Dr. Darwin Medina · Colombia"], img: "img/dr-darwin-medina.jpg",
+    s: ["Identidad ordenada, informativa y accesible para un consultorio odontológico.", "An organized, informative and approachable identity for a dental practice."],
+    body: () => `<img src="img/dr-darwin-medina.jpg" alt="${L("Publicaciones del Dr. Darwin Medina","Dr. Darwin Medina posts")}">` +
+      dar(`<p>${L("Un consultorio que quería educar a sus pacientes en redes sin perder seriedad profesional.","A practice that wanted to educate patients on social media without losing professional credibility.")}</p>`,
+        `<ul>${L("<li>Estrategia de marca con un esquema de dos colores y formas modernas.</li><li>Optimización de perfiles en redes sociales.</li>","<li>Brand strategy with a two-color scheme and modern shapes.</li><li>Social media profile optimization.</li>")}</ul>`,
+        `<p>${L("Un perfil reconocible con contenido educativo sobre salud dental.","A recognizable profile with educational dental-health content.")}</p>`) },
+];
+
+const COUNTRIES = [
+  { id: "840", n: ["Estados Unidos", "United States"], ll: [-98, 39], items: [["Betr", "Sony Pictures Television"], ["Betr", "Telemundo (NBCUniversal)"], ["Betr", "Warner Music Group"], ["Betr", "V-me"], ["Betr", "Gas Monkey"], ["Betr", "Creator Trust"], ["Freelance", "Fished Digital Marketing"], ["Freelance", "Crush Coffee"]] },
+  { id: "630", n: ["Puerto Rico", "Puerto Rico"], ll: [-66.5, 18.2], items: [["Freelance", "Glenda Vanessa Mentora"], ["Freelance", "Droz Design · Droz Boutique"], ["Freelance", "Aqualina Swimwear"], ["Freelance", "High Top Level"], ["Freelance", "On Vogue Boutique"], ["Freelance", ["+10 marcas de moda y servicios", "+10 fashion and service brands"]]] },
+  { id: "484", n: ["México", "Mexico"], ll: [-102, 23.6], items: [["Betr", "TelevisaUnivision · ViX"], ["Betr", "Distroller"]] },
+  { id: "170", n: ["Colombia", "Colombia"], ll: [-74.1, 4.6], items: [["Betr", "Banco Davivienda"], ["Betr", "Davivienda Corredores"], ["Nagal", "Bosque Nagal"], ["Freelance", "Coral Voces de Santander"], ["Freelance", "Dr. Darwin Medina"], ["Freelance", "Bulundrún"]] },
+  { id: "862", n: ["Venezuela", "Venezuela"], ll: [-66.2, 8.2], items: [["Freelance", "Latina Manager"]] },
+  { id: "218", n: ["Ecuador", "Ecuador"], ll: [-78.5, -1.4], items: [["Betr", "Ecuavisa"]] },
+  { id: "076", n: ["Brasil", "Brazil"], ll: [-51, -10], items: [["Betr", ["Cuentas de medios", "Media accounts"]]] },
+  { id: "152", n: ["Chile", "Chile"], ll: [-71, -33.4], items: [["Freelance", ["Marcas de consultoría digital", "Digital consulting brands"]]] },
+  { id: "620", n: ["Portugal", "Portugal"], ll: [-8.6, 39.6], items: [["Freelance", "Web 3 Sapiens (Lisboa)"]] },
+];
+const ORG = { Betr: "Betr Media", Nagal: "Bosque Nagal", Freelance: ["Consultoría", "Consulting"] };
+const BRANDS = ["Sony Pictures Television", "Telemundo", "TelevisaUnivision · ViX", "Banco Davivienda", "Davivienda Corredores", "Warner Music Group", "Ecuavisa", "Gas Monkey", "V-me", "Distroller", "Creator Trust", "Web 3 Sapiens", "Bosque Nagal"];
+const tx = v => Array.isArray(v) ? L(v[0], v[1]) : v;
+
+/* ---------- cases ---------- */
+const cards = document.getElementById("cards");
+const dlg = document.getElementById("dlg");
+let filter = "all";
+try { filter = localStorage.getItem("dm-tab") || "all"; } catch (e) {}
+
+function renderCards() {
+  cards.innerHTML = "";
+  const list = CASES.filter(c => filter === "all" || c.cat === filter);
+  cards.dataset.count = list.length;
+  list.forEach((c, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "card" + (filter === "all" && c.feat ? " feat" : ""); b.style.animationDelay = (i * 45) + "ms";
+    const top = c.ba && filter === "all"
+      ? `<div class="thumb duo"><figure><img src="img/coral-antes.jpg" alt="" loading="lazy"><figcaption>${L("Antes","Before")}</figcaption></figure><figure><img src="img/coral-despues.jpg" alt="" loading="lazy"><figcaption>${L("Después","After")}</figcaption></figure></div>`
+      : c.img
+      ? `<img class="thumb" src="${c.img}" alt="" loading="lazy">`
+      : `<div class="ph ${c.ph[2]}"><div>${c.ph[0]}<small>${tx(c.ph[1])}</small></div></div>`;
+    b.innerHTML = `${top}<div class="cb"><span class="cat">${tx(c.lab || CAT[c.cat])}</span><h3>${tx(c.t)}</h3><p>${tx(c.s)}</p><span class="more">${c.jump ? L("Ver caso completo ↑", "See full case ↑") : L("Abrir caso →", "Open case →")}</span></div>`;
+    b.addEventListener("click", () => openCase(c));
+    cards.appendChild(b);
+  });
+}
+function openCase(c) {
+  if (c.jump) { document.getElementById(c.jump).scrollIntoView({ behavior: "smooth" }); return; }
+  document.getElementById("dlgCat").textContent = tx(c.lab || CAT[c.cat]);
+  document.getElementById("dlgTitle").textContent = tx(c.t);
+  document.getElementById("dlgBody").innerHTML = c.body();
+  const r = document.getElementById("baRange");
+  if (r) r.addEventListener("input", () => document.getElementById("ba").style.setProperty("--pos", r.value + "%"));
+  dlg.showModal();
+  dlg.scrollTop = 0;
+}
+document.getElementById("dlgClose").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+const tabs = document.querySelectorAll(".tabs button");
+tabs.forEach(t => {
+  const f = t.dataset.filter;
+  t.querySelector(".n").textContent = CASES.filter(c => f === "all" || c.cat === f).length;
+  t.addEventListener("click", () => {
+    filter = f;
+    tabs.forEach(x => x.setAttribute("aria-selected", x === t ? "true" : "false"));
+    document.querySelector(".folder").setAttribute("aria-labelledby", t.id);
+    renderCards();
+    try { localStorage.setItem("dm-tab", f); } catch (e) {}
+  });
+});
+if (![...tabs].some(t => t.dataset.filter === filter)) filter = "all";
+tabs.forEach(x => x.setAttribute("aria-selected", x.dataset.filter === filter ? "true" : "false"));
+
+/* ---------- countries + map ---------- */
+let selected = "840";
+const chipsEl = document.getElementById("countryChips");
+const detailEl = document.getElementById("countryDetail");
+function renderCountries() {
+  chipsEl.innerHTML = "";
+  COUNTRIES.forEach(c => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = tx(c.n);
+    b.setAttribute("aria-pressed", c.id === selected ? "true" : "false");
+    b.addEventListener("click", () => selectCountry(c.id));
+    chipsEl.appendChild(b);
+  });
+  const c = COUNTRIES.find(x => x.id === selected);
+  detailEl.innerHTML = `<p class="eyebrow">${c.items.length} ${c.items.length === 1 ? L("proyecto", "project") : L("proyectos", "projects")}</p><h3>${tx(c.n)}</h3><ul>${c.items.map(([o, v]) => `<li><span>${tx(ORG[o])}</span>${tx(v)}</li>`).join("")}</ul>`;
+  detailEl.style.animation = "none"; void detailEl.offsetWidth; detailEl.style.animation = "";
+  document.querySelectorAll("#map .land.on").forEach(p => p.classList.toggle("sel", p.dataset.id === selected));
+  document.querySelectorAll("#map .pin").forEach(p => p.classList.toggle("sel", p.dataset.id === selected));
+}
+function selectCountry(id) { selected = id; renderCountries(); }
+
+function drawMap() {
+  const box = document.getElementById("map");
+  if (!window.d3 || !window.topojson) { box.querySelector(".map-fallback").textContent = L("El mapa no pudo cargar. Usa la lista de países.", "The map couldn't load. Use the country list."); return; }
+  fetch("countries-110m.json").then(r => r.json()).then(world => {
+    const W = 760, H = 470;
+    const land = topojson.feature(world, world.objects.countries).features.filter(f => f.id !== "010");
+    const proj = d3.geoNaturalEarth1().fitExtent([[8, 8], [W - 8, H - 8]], { type: "MultiPoint", coordinates: [[-128, 56], [-34, -56], [14, 50], [-10, 36]] });
+    const path = d3.geoPath(proj);
+    const on = new Set(COUNTRIES.map(c => c.id));
+    const svg = d3.create("svg").attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img").attr("aria-label", L("Mapa de países donde he trabajado", "Map of countries I have worked in"));
+    svg.append("g").selectAll("path").data(land).join("path")
+      .attr("d", path).attr("class", d => "land" + (on.has(d.id) ? " on" : "")).attr("data-id", d => d.id)
+      .on("click", (e, d) => on.has(d.id) && selectCountry(d.id));
+    const pins = svg.append("g").selectAll("g").data(COUNTRIES).join("g")
+      .attr("class", "pin").attr("data-id", d => d.id)
+      .attr("transform", d => `translate(${proj(d.ll)})`)
+      .on("click", (e, d) => selectCountry(d.id));
+    pins.append("circle").attr("class", "ring").attr("r", 5).style("animation-delay", (d, i) => (i * .25) + "s");
+    pins.append("circle").attr("class", "dot").attr("r", 6);
+    pins.append("title").text(d => tx(d.n));
+    box.innerHTML = ""; box.appendChild(svg.node());
+    renderCountries();
+  }).catch(() => { box.querySelector(".map-fallback").textContent = L("El mapa no pudo cargar. Usa la lista de países.", "The map couldn't load. Use the country list."); });
+}
+
+/* ---------- marquee ---------- */
+document.getElementById("marquee").innerHTML = [...BRANDS, ...BRANDS].map((b, i) => `<span${i >= BRANDS.length ? ' aria-hidden="true"' : ""}>${b}</span>`).join("");
+
+/* ---------- stats count-up ---------- */
+const fmt = n => n.toLocaleString(lang === "en" ? "en-US" : "es-CO");
+function statText(dd, n) { return (dd.dataset.pre || "") + fmt(n) + (dd.dataset.suf || ""); }
+function setStats() { document.querySelectorAll(".stats dd[data-n]").forEach(dd => dd.textContent = statText(dd, +dd.dataset.n)); }
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if ("IntersectionObserver" in window && !reduce) {
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    io.unobserve(en.target);
+    const dd = en.target, end = +dd.dataset.n, t0 = performance.now(), dur = 1200;
+    const step = t => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); dd.textContent = statText(dd, Math.round(end * e)); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }), { threshold: .6 });
+  document.querySelectorAll(".stats dd[data-n]").forEach(dd => io.observe(dd));
+}
+
+/* ---------- language ---------- */
+const i18n = document.querySelectorAll("[data-en]");
+i18n.forEach(el => el.dataset.es = el.innerHTML);
+function applyLang() {
+  document.documentElement.lang = lang;
+  i18n.forEach(el => el.innerHTML = lang === "en" ? el.dataset.en : el.dataset.es);
+  document.querySelectorAll(".lang b").forEach(b => b.classList.toggle("on", b.dataset.l === lang));
+  document.getElementById("dlgClose").setAttribute("aria-label", L("Cerrar", "Close"));
+  setStats(); renderCards(); renderCountries();
+  const svg = document.querySelector("#map svg");
+  if (svg) svg.setAttribute("aria-label", L("Mapa de países donde he trabajado", "Map of countries I have worked in"));
+  document.querySelectorAll("#map .pin title").forEach((t, i) => t.textContent = tx(COUNTRIES[i].n));
+  if (dlg.open) dlg.close();
+}
+document.getElementById("langBtn").addEventListener("click", () => {
+  lang = lang === "es" ? "en" : "es";
+  try { localStorage.setItem("dm-lang", lang); } catch (e) {}
+  applyLang();
+});
+
+/* ---------- copy + theme ---------- */
+let toastT;
+function toast(msg) {
+  let el = document.querySelector(".toast");
+  if (!el) { el = document.createElement("div"); el.className = "toast"; el.setAttribute("role", "status"); document.body.appendChild(el); }
+  el.textContent = msg; el.hidden = false;
+  clearTimeout(toastT); toastT = setTimeout(() => el.hidden = true, 2200);
+}
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+  navigator.clipboard.writeText(b.dataset.copy).then(() => toast(L("Email copiado", "Email copied"))).catch(() => {
+    const line = b.closest(".hero-copy, .contact").querySelector(".email-line");
+    const range = document.createRange(); range.selectNodeContents(line);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(range);
+    toast(L("Email seleccionado: cópialo con Cmd+C", "Email selected: copy it with Cmd+C"));
+  });
+}));
+
+applyLang();
+drawMap();
+</script>
+
+</body>
+</html>
